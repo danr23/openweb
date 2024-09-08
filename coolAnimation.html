@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{
+    font-family: kcora;
+    src: url('kcora.ttf') format('truetype');
+    font-weight: normal;
+}
+@keyframes bounceR {
+0% {
+color: red;
+transform: translate(0px,0px);
+}
+50% {
+transform: translate(-5px,-20px);
+}
+100% {
+transform: translate(0px,0px);
+color: red;
+}
+}
+@keyframes bounceG {
+0% {
+color: green;
+transform: translate(0px,0px);
+}
+50% {
+transform: translate(0px,-20px);
+}
+100% {
+transform: translate(0px,0px);
+color: green;
+}
+}
+@keyframes bounceB {
+0% {
+color: blue;
+transform: translate(0px,0px);
+}
+50% {
+transform: translate(5px,-20px);
+}
+100% {
+transform: translate(0px,0px);
+color: blue;
+}
+}
+.r {
+animation: bounceR 1s ease-in 1;
+position: absolute;
+margin-left: 25px;
+margin-top: 50px;
+font-size: 50px;
+}
+.g {
+animation: bounceG 1s linear 2;
+position: absolute;
+margin-left: 58px;
+margin-top: 50px;
+font-size: 50px;
+}
+.b {
+animation: bounceB 1s linear 3;
+position: absolute;
+margin-left: 91px;
+margin-top: 50px;
+font-size: 50px;
+}
+</style>
+</head>
+<body>
+<span class='r'>R</span><span class='g'>G</span><span class='b'>B</span>
+</body>
+</html>
